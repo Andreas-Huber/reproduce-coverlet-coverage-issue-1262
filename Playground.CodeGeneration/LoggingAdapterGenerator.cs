@@ -48,7 +48,7 @@ namespace {{NAMESPACE}}
                                 .Replace("{{CLASS}}", classDeclarationText);
 
                             // inject the created source into the users compilation
-                            context.AddSource($"generatedAkka-LoggingAdapter-{classDecl.Identifier.Text}", source);
+                            context.AddSource($"generatedAkka-LoggingAdapter-{classDecl.Identifier.Text}.g", source);
                         }
                     }
                 }
